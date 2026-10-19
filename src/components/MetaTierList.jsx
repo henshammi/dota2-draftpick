@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Crown, ArrowRight, Shield } from 'lucide-react';
 
-export default function MetaTierList({ allHeroes = [], onSelectHeroForGuide, skillBracket = 'divine_immortal' }) {
+export default function MetaTierList({ allHeroes = [], onSelectHeroForGuide, skillBracket = 'all' }) {
   const [search, setSearch] = useState('');
   const [selectedAttr, setSelectedAttr] = useState('all');
 

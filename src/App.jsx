@@ -17,7 +17,7 @@ export default function App() {
   
   const [selectedPlayerHero, setSelectedPlayerHero] = useState(null);
   const [activeTab, setActiveTab] = useState('counter'); // 'counter', 'items', 'meta'
-  const [skillBracket, setSkillBracket] = useState('divine_immortal');
+  const [skillBracket, setSkillBracket] = useState('all');
 
   // Counter calculation state
   const [counterResults, setCounterResults] = useState({ topCounters: [], worstMatchups: [] });
