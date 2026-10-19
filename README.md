@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-aegisdraft.is--a.dev-emerald?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aegisdraft.is-a.dev)
 ![Dota 2](https://img.shields.io/badge/Dota_2-Patch_7.37d-red?style=for-the-badge&logo=steam&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -10,15 +11,18 @@
 ![OpenDota API](https://img.shields.io/badge/Data-OpenDota_API-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
+### 🌐 Akses Website: [https://aegisdraft.is-a.dev](https://aegisdraft.is-a.dev)
+
 <p align="center">
   <strong>Aplikasi web modern untuk membantu pemain Dota 2 dalam menentukan counter-pick hero secara real-time dan memberikan panduan pemilihan item (Core vs Situasional) berdasarkan statistik langsung dari OpenDota API.</strong>
 </p>
 
-[Fitur Utama](#-fitur-utama) • [Tech Stack](#-tech-stack) • [Cara Menjalankan](#-cara-menjalankan-secara-lokal) • [Struktur Proyek](#-struktur-proyek) • [Atribusi API](#-sumber-data--atribusi)
+[🌐 Live Website](https://aegisdraft.is-a.dev) • [Fitur Utama](#-fitur-utama) • [Tech Stack](#-tech-stack) • [Cara Menjalankan](#-cara-menjalankan-secara-lokal) • [Struktur Proyek](#-struktur-proyek) • [Atribusi API](#-sumber-data--atribusi)
 
 </div>
 
 ---
+
 
 ## 📖 Tentang Proyek
 
@@ -108,6 +112,8 @@ Buka browser Anda dan akses:
 ```
 http://localhost:5173/
 ```
+
+Atau kunjungi versi publik langsung di: **[https://aegisdraft.is-a.dev](https://aegisdraft.is-a.dev)**
 
 ### 4. Build untuk Produksi
 
