@@ -22,28 +22,31 @@
 
 ## 📖 Tentang Proyek
 
-**Aegis Draft** dirancang khusus untuk mempermudah pemain Dota 2 (dari mode santai hingga *ranked draft*) dalam mengambil keputusan strategis:
+**Aegis Draft** dirancang khusus untuk mempermudah pemain Dota 2 (dari mode santai hingga _ranked draft_) dalam mengambil keputusan strategis:
+
 1. **Siapa hero terbaik untuk meng-counter lineup musuh?**
 2. **Item apa yang wajib dibeli (Core Item) dan item apa yang harus dibeli untuk menghadapi ancaman spesifik lawan (Situational Counter Item)?**
 
-Semua data statistik hero, riwayat keunggulan *head-to-head matchup*, hingga frekuensi pembelian item diambil langsung secara dinamis melalui **OpenDota API** dan aset resmi **Valve Steam CDN**.
+Semua data statistik hero, riwayat keunggulan _head-to-head matchup_, hingga frekuensi pembelian item diambil langsung secara dinamis melalui **OpenDota API** dan aset resmi **Valve Steam CDN**.
 
 ---
 
 ## ✨ Fitur Utama
 
 ### 1. 🛡️ Real-Time Counter-Picker & Draft Strategist
+
 - **5 Slot Komposisi Hero Lawan (Dire Lineup)**: Masukkan hingga 5 hero yang dipilih tim musuh, atau gunakan tombol **"🎲 Acak Lawan"** untuk pengujian instan.
 - **Kalkulasi Keunggulan Multivariat (Advantage %)**: Menghitung persentase kemenangan dari puluhan ribu data pertandingan OpenDota (`/heroes/{id}/matchups`) terhadap semua hero musuh yang dipilih.
-- **Filter Berdasarkan Role**: Pilah rekomendasi counter hero berdasarkan posisi yang ingin Anda mainkan (*Carry*, *Mid*, *Offlane*, atau *Support*).
-- **Peringatan Hero yang Harus Dihindari (*Countered By*)**: Mengetahui hero apa saja yang sebaiknya tidak Anda pilih karena rentan dihancurkan oleh lineup lawan.
-- **Deteksi Ancaman Taktis Lawan**: Menganalisis potensi bahaya komposisi musuh seperti *Heavy Magic Damage*, *Evasion*, *Strong Passives*, *High Healing/Lifesteal*, hingga *Ilusi*.
+- **Filter Berdasarkan Role**: Pilah rekomendasi counter hero berdasarkan posisi yang ingin Anda mainkan (_Carry_, _Mid_, _Offlane_, atau _Support_).
+- **Peringatan Hero yang Harus Dihindari (_Countered By_)**: Mengetahui hero apa saja yang sebaiknya tidak Anda pilih karena rentan dihancurkan oleh lineup lawan.
+- **Deteksi Ancaman Taktis Lawan**: Menganalisis potensi bahaya komposisi musuh seperti _Heavy Magic Damage_, _Evasion_, _Strong Passives_, _High Healing/Lifesteal_, hingga _Ilusi_.
 
 ### 2. 🎒 Panduan Item Pintar (Core vs Situasional)
-- **🌟 Core Items (Item Wajib)**: Rekomendasi item jadi (*finished items*) dengan frekuensi pembelian tertinggi dan lonjakan kekuatan (*power spike*) terbesar untuk hero Anda.
+
+- **🌟 Core Items (Item Wajib)**: Rekomendasi item jadi (_finished items_) dengan frekuensi pembelian tertinggi dan lonjakan kekuatan (_power spike_) terbesar untuk hero Anda.
 - **🎯 Situational Items (Counter Khusus Lawan)**: Analisis dinamis terhadap hero musuh di draft:
-  - 🏹 **Menghadapi Evasion (PA / Windranger)** $\rightarrow$ Rekomendasi **Monkey King Bar (MKB)** & **Bloodthorn** (*True Strike*).
-  - 🗡️ **Menghadapi Pasif Tebal (Bristleback / Spectre / Huskar)** $\rightarrow$ Rekomendasi **Silver Edge** (*Break*).
+  - 🏹 **Menghadapi Evasion (PA / Windranger)** $\rightarrow$ Rekomendasi **Monkey King Bar (MKB)** & **Bloodthorn** (_True Strike_).
+  - 🗡️ **Menghadapi Pasif Tebal (Bristleback / Spectre / Huskar)** $\rightarrow$ Rekomendasi **Silver Edge** (_Break_).
   - ⚡ **Menghadapi Burst Magic / Stun (Lion / Lina / Zeus / Invoker)** $\rightarrow$ Rekomendasi **Black King Bar (BKB)**, **Pipe of Insight**, atau **Glimmer Cape**.
   - 🩸 **Menghadapi Regen / Lifesteal Masif (Morphling / Slark / Necro)** $\rightarrow$ Rekomendasi **Spirit Vessel**, **Eye of Skadi**, atau **Shiva's Guard**.
   - 🔒 **Menghadapi Targeted Spell Bahaya (Doom / Duel / Roar)** $\rightarrow$ Rekomendasi **Linken's Sphere** atau **Lotus Orb**.
@@ -54,20 +57,14 @@ Semua data statistik hero, riwayat keunggulan *head-to-head matchup*, hingga fre
   - **Starting Items (0:00 - 3:00)**: Laning sustain di bawah 700 Gold.
   - **Early Game (3:00 - 15:00)**: Sepatu dan item transisi statistik.
   - **Core Mid Game (15:00 - 30:00)**: Item utama pelengkap hero.
-  - **Late Game & Luxury (30:00+ min)**: Item tier atas 6-slot *endgame*.
-- **🔍 Modal Detail Item**: Klik pada item apa saja untuk membaca biaya *gold*, bonus atribut, deskripsi efek kemampuan aktif/pasif, hingga *lore* resmi Dota 2.
+  - **Late Game & Luxury (30:00+ min)**: Item tier atas 6-slot _endgame_.
+- **🔍 Modal Detail Item**: Klik pada item apa saja untuk membaca biaya _gold_, bonus atribut, deskripsi efek kemampuan aktif/pasif, hingga _lore_ resmi Dota 2.
 
 ### 3. 👑 Meta Tier List Explorer
-- Mengelompokkan seluruh 127 hero Dota 2 ke dalam tingkatan tier: **S+ (Overlord)**, **S (Top Tier)**, **A (Solid)**, **B (Situational)**, dan **C (Off-Meta)**.
-- Filter berdasarkan rank bracket: *Herald–Archon*, *Legend–Ancient*, *Divine–Immortal*, atau *Pro Circuit Matches*.
-- Dilengkapi pencarian cepat dan filter atribut (*Strength*, *Agility*, *Intelligence*, *Universal*).
 
-### 4. 📱 Desain Responsif & Estetika Gelap Dota 2
-- Tampilan bertema gelap (*obsidian black*, aksen *Radiant Emerald*, *Dire Crimson*, dan *Ancient Gold*).
-- Responsif penuh di semua perangkat:
-  - **Mobile (< 640px)**: Navigasi *segmented tab bar*, *horizontal swipeable draft track* (`snap-x`), dan filter ramah sentuhan jempol.
-  - **Tablet (640px - 1024px)**: Grid seimbang dengan proporsi kartu yang pas.
-  - **Desktop (≥ 1024px)**: Navigasi terpadu dan tata letak multi-kolom yang luas.
+- Mengelompokkan seluruh 127 hero Dota 2 ke dalam tingkatan tier: **S+ (Overlord)**, **S (Top Tier)**, **A (Solid)**, **B (Situational)**, dan **C (Off-Meta)**.
+- Filter berdasarkan rank bracket: _Herald–Archon_, _Legend–Ancient_, _Divine–Immortal_, atau _Pro Circuit Matches_.
+- Dilengkapi pencarian cepat dan filter atribut (_Strength_, _Agility_, _Intelligence_, _Universal_).
 
 ---
 
@@ -88,30 +85,36 @@ Semua data statistik hero, riwayat keunggulan *head-to-head matchup*, hingga fre
 Pastikan Anda telah menginstal [Node.js](https://nodejs.org/) (versi 18 ke atas disarankan) di komputer Anda.
 
 ### 1. Clone Repositori
+
 ```bash
 git clone https://github.com/username/dota2-aegis-draft.git
 cd dota2-aegis-draft
 ```
 
 ### 2. Instal Dependensi
+
 ```bash
 npm install
 ```
 
 ### 3. Jalankan Server Pengembangan (Dev Server)
+
 ```bash
 npm run dev
 ```
 
 Buka browser Anda dan akses:
+
 ```
 http://localhost:5173/
 ```
 
 ### 4. Build untuk Produksi
+
 ```bash
 npm run build
 ```
+
 Hasil build siap produksi akan tersimpan di dalam folder `dist/`.
 
 ---
@@ -147,15 +150,15 @@ dota2/
 
 ## 🌐 Sumber Data & Atribusi
 
-- Data statistik hero, riwayat *matchup*, dan popularitas pembelian item disediakan oleh **[OpenDota API](https://docs.opendota.com/)** (Open Source Dota 2 Data Platform).
+- Data statistik hero, riwayat _matchup_, dan popularitas pembelian item disediakan oleh **[OpenDota API](https://docs.opendota.com/)** (Open Source Dota 2 Data Platform).
 - Gambar avatar hero, ikon hero, dan ikon item bersumber dari CDN resmi **Valve Corporation**.
 
 ---
 
 ## ⚠️ Disclaimer
 
-*Dota 2 is a registered trademark of Valve Corporation.*  
-Aplikasi ini merupakan proyek karya penggemar (*fan-made / hobby project*) independen dan tidak berafiliasi atau didukung secara resmi oleh Valve Corporation.
+_Dota 2 is a registered trademark of Valve Corporation._  
+Aplikasi ini merupakan proyek karya penggemar (_fan-made / hobby project_) independen dan tidak berafiliasi atau didukung secara resmi oleh Valve Corporation.
 
 ---
 
