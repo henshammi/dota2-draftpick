@@ -2,7 +2,6 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-henshammi.github.io/dota2-draftpick/-emerald?style=for-the-badge&logo=googlechrome&logoColor=white)](https://henshammi.github.io/dota2-draftpick/)
 ![Dota 2](https://img.shields.io/badge/Dota_2-Patch_7.37d-red?style=for-the-badge&logo=steam&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
